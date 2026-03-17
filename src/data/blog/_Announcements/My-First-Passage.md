@@ -1,16 +1,15 @@
 ---
 title: First Passage Of My Blog
 author: King Hua
-pubDatetime: 2026-03-17T21:43:16Z
+pubDatetime: 2026-03-17T13:43:16Z
 slug: Announcement in English
 featured: true
 tags:
   - Announcement
-description:
-  This is my first post as an announcement.
+description: This is my first post as an announcement.
 ---
 
-``` python
+```python
 print("hello world")
 ```
 
@@ -24,27 +23,28 @@ Hence, here we are.
 
 Here’s what I’ll be sharing:
 
-*   **Thoughts that made me pause** — about life, reading, or a corner of the world glimpsed by chance. Much like grasping the second law of thermodynamics, $$ΔS ≥ 0$$, which reminds me that disorder is the default, and all understanding and order require energy. I’m also fascinated by certain elegant mathematical truths, like **Euler’s identity**: $$e^{i\pi} + 1 = 0$$. It connects the natural base, the imaginary unit, the ratio of a circle's circumference to its diameter, and the fundamental numbers 0 and 1 in one breathtaking equation—a quiet reminder that seemingly unrelated domains might share a beautifully unified logic beneath the surface.
+- **Thoughts that made me pause** — about life, reading, or a corner of the world glimpsed by chance. Much like grasping the second law of thermodynamics, $$ΔS ≥ 0$$, which reminds me that disorder is the default, and all understanding and order require energy. I’m also fascinated by certain elegant mathematical truths, like **Euler’s identity**: $$e^{i\pi} + 1 = 0$$. It connects the natural base, the imaginary unit, the ratio of a circle's circumference to its diameter, and the fundamental numbers 0 and 1 in one breathtaking equation—a quiet reminder that seemingly unrelated domains might share a beautifully unified logic beneath the surface.
 
-*   **Things I’ve tried and tested — the useful and the not-so-useful** — be it a method, a tool, or a perspective. They’ll often be presented like runnable code snippets, ready for you to execute or tweak:
-    ```python
-    # A simple function: extract the core from a messy list
-    def extract_essence(thoughts_list):
-        # 1. Filter out pure emotional noise
-        filtered = [t for t in thoughts_list if t not in ["anxiety", "procrastination"]]
-        # 2. Connect what remains to find the thread
-        essence = " -> ".join(filtered)
-        return essence
+- **Things I’ve tried and tested — the useful and the not-so-useful** — be it a method, a tool, or a perspective. They’ll often be presented like runnable code snippets, ready for you to execute or tweak:
 
-    # Example, processing: [“confusion”, “reading”, “inspiration”, “procrastination”]
-    # Output: “confusion -> reading -> inspiration”
-    ```
-    
-*   **The imperfect, real process** — the learning, the attempts, even the detours. I believe growth is rarely linear; it’s more like navigating a search function, sometimes requiring random walks to find the direction of steepest ascent. This journey might be metaphorically described by the **second derivative**, the rate of change of the rate of change:
-    $$
-    f''(x) = \frac{d^2 f}{dx^2}
-    $$
-    We often focus on velocity (the first derivative), but it’s the acceleration (the second) that shapes the curve’s concavity. What seems like slow accumulation might be building toward a fundamental shift in direction.
+  ```python
+  # A simple function: extract the core from a messy list
+  def extract_essence(thoughts_list):
+      # 1. Filter out pure emotional noise
+      filtered = [t for t in thoughts_list if t not in ["anxiety", "procrastination"]]
+      # 2. Connect what remains to find the thread
+      essence = " -> ".join(filtered)
+      return essence
+
+  # Example, processing: [“confusion”, “reading”, “inspiration”, “procrastination”]
+  # Output: “confusion -> reading -> inspiration”
+  ```
+
+- **The imperfect, real process** — the learning, the attempts, even the detours. I believe growth is rarely linear; it’s more like navigating a search function, sometimes requiring random walks to find the direction of steepest ascent. This journey might be metaphorically described by the **second derivative**, the rate of change of the rate of change:
+  $$
+  f''(x) = \frac{d^2 f}{dx^2}
+  $$
+  We often focus on velocity (the first derivative), but it’s the acceleration (the second) that shapes the curve’s concavity. What seems like slow accumulation might be building toward a fundamental shift in direction.
 
 You won’t find “absolute truth” here, only honest notes and open conversation. Picture a friend across the table, coffee still steaming, with sketches or a few lines of untested code on a napkin.
 

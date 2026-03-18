@@ -6,72 +6,95 @@ tags:
   - CS50
 description: Answer for CS50 Problem Set 9
 ---
+
 ## Table of contents
 
 # CS50 Problem Set 9
-Here's my answers for the CS50 Problem Set 9. Hope that will help you a bit. 
+
+Here's my answers for the CS50 Problem Set 9. Hope that will help you a bit.
 ![](https://cdn.jsdelivr.net/gh/kinghua0629/kinghua0629-blog-img/20260318203536655.webp)
 
 ## Problem 1: [Birthdays](https://cs50.harvard.edu/x/2026/psets/9/birthdays/#birthdays)
+
 **index.html**
+
 ```html
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="/static/styles.css" rel="stylesheet" />
+    <title>Birthdays</title>
+  </head>
 
-    <head>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-        <link href="/static/styles.css" rel="stylesheet">
-        <title>Birthdays</title>
-    </head>
+  <body>
+    <div class="header">
+      <h1>Birthdays</h1>
+    </div>
+    <div class="container">
+      <div class="section">
+        <h2>Add a Birthday</h2>
+        <!-- TODO: Create a form for users to submit a name, a month, and a day -->
+        <!-- With {action="/" method ="post"}, the form can send data back to the server, and meet the requirement {request.method == "POST"} in app.py-->
+        <form action="/" method="post">
+          <input
+            name="name"
+            placeholder="Name"
+            autofocus
+            autocomplete="off"
+            type="text"
+            min="1"
+            max="12"
+          />
+          <input
+            name="month"
+            placeholder="Month"
+            autocomplete="off"
+            type="number"
+            min="1"
+            max="31"
+          />
+          <input
+            name="day"
+            placeholder="Day"
+            autocomplete="off"
+            type="number"
+          />
+          <input type="submit" value="Add Birthday" />
+        </form>
+      </div>
 
-    <body>
-        <div class="header">
-            <h1>Birthdays</h1>
-        </div>
-        <div class="container">
-            <div class="section">
-
-                <h2>Add a Birthday</h2>
-                <!-- TODO: Create a form for users to submit a name, a month, and a day -->
-                <!-- With {action="/" method ="post"}, the form can send data back to the server, and meet the requirement {request.method == "POST"} in app.py-->
-                <form action="/" method="post">
-                    <input name="name" placeholder="Name" autofocus autocomplete="off" type="text" min="1" max="12">
-                    <input name="month" placeholder="Month" autocomplete="off" type="number" min="1" max="31">
-                    <input name="day" placeholder="Day" autocomplete="off" type="number">
-                    <input type="submit" value="Add Birthday">
-                </form>
-
-
-            </div>
-
-            <div class="section">
-
-                <h2>All Birthdays</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Birthday</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- TODO: Loop through the database entries to display them in this table -->
-                        {% for birthday in birthdays %}
-                            <tr>
-                                <td>{{ birthday["name"] }}</td>
-                                <td>{{ birthday["month"] }}/{{ birthday["day"] }}</td>
-                            </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </body>
-
+      <div class="section">
+        <h2>All Birthdays</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Birthday</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- TODO: Loop through the database entries to display them in this table -->
+            {% for birthday in birthdays %}
+            <tr>
+              <td>{{ birthday["name"] }}</td>
+              <td>{{ birthday["month"] }}/{{ birthday["day"] }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>
 ```
+
 **app.py**
+
 ```python
 import os
 
@@ -127,7 +150,9 @@ def index():
 ```
 
 ## Problem 2: [Finance](https://cs50.harvard.edu/x/psets/9/finance/#c50-finance)
+
 **app.py**
+
 ```python
 import os
 
@@ -504,191 +529,210 @@ def sell():
         flash(f"Sold {shares} shares of {symbol.upper()} for {usd(sold)}")
         return redirect("/")
 ```
+
 **buy.html**
+
 ```html
-{% extends "layout.html" %}
-
-{% block title %}
-    Buy
-{% endblock %}
-
-{% block main %}
-    <h2>Buy Shares</h2>
-    <form action="/buy" method="post">
-        <div>
-            <input name="symbol" placeholder="Symbol" type="text" autocomplete="off" autofocus>
-            <input name="shares" placeholder="Shares" type="number" autocomplete="off" autofocus min="0">
-            <button type="submit">Buy</button>
-        </div>
-    </form>
+{% extends "layout.html" %} {% block title %} Buy {% endblock %} {% block main
+%}
+<h2>Buy Shares</h2>
+<form action="/buy" method="post">
+  <div>
+    <input
+      name="symbol"
+      placeholder="Symbol"
+      type="text"
+      autocomplete="off"
+      autofocus
+    />
+    <input
+      name="shares"
+      placeholder="Shares"
+      type="number"
+      autocomplete="off"
+      autofocus
+      min="0"
+    />
+    <button type="submit">Buy</button>
+  </div>
+</form>
 {% endblock %}
 ```
+
 **history.html**
+
 ```html
-{% extends "layout.html" %}
-
-{% block title %}
-    C$50 Finance: Portfolio
-{% endblock %}
-
-{% block main %}
-    <table class="table table-bordered table-striped">
-        <thead class="thead-light">
-            <tr>
-                <th>Symbol</th>
-                <th>Shares</th>
-                <th>Method</th>
-                <th>Price</th>
-                <th>Transacted</th>
-            </thead>
-            <tbody>
-                {% for row in rows %}
-                    <tr>
-                        <td>{{ row['symbol'] }}</td>
-                        <td>{{ row['shares'] }}</td>
-                        <td>{{ row['method'] }}</td>
-                        <td>{{ row['price'] | usd }}</td>
-                        <td>{{ row['transacted'] }}</td>
-                    </tr>
-                {% endfor %}
-            </tbody>
-        </table>
+{% extends "layout.html" %} {% block title %} C$50 Finance: Portfolio {%
+endblock %} {% block main %}
+<table class="table-bordered table-striped table">
+  <thead class="thead-light">
+    <tr>
+      <th>Symbol</th>
+      <th>Shares</th>
+      <th>Method</th>
+      <th>Price</th>
+      <th>Transacted</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+    <tr>
+      <td>{{ row['symbol'] }}</td>
+      <td>{{ row['shares'] }}</td>
+      <td>{{ row['method'] }}</td>
+      <td>{{ row['price'] | usd }}</td>
+      <td>{{ row['transacted'] }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 {% endblock %}
 ```
+
 **index.html**
+
 ```html
-{% extends "layout.html" %}
-
-{% block title %}
-    C$50 Finance: Portfolio
-{% endblock %}
-
-{% block main %}
-    <table class="table table-bordered table-striped">
-        <thead class="thead-light">
-            <tr>
-                <th>Symbol</th>
-                <th>Name</th>
-                <th>Shares</th>
-                <th>Price</th>
-                <th>Total Value</th>
-            </thead>
-            <tbody>
-                {% for row in rows %}
-                    <tr>
-                        <td>{{ row['symbol'] }}</td>
-                        <td>{{ row['name'] }}</td>
-                        <td>{{ row['shares'] }}</td>
-                        <td>{{ row['price_usd'] }}</td>
-                        <td>{{ row['total_usd'] }}</td>
-                    </tr>
-                {% endfor %}
-                <tr>
-                    <td colspan="4" align="right">Cash</td>
-                    <td>{{ cash }}</td>
-                </tr>
-                <tr>
-                    <td colspan="4" align="right">Total Value</td>
-                    <td>{{ sum }}</td>
-                </tr>
-            </tbody>
-        </table>
+{% extends "layout.html" %} {% block title %} C$50 Finance: Portfolio {%
+endblock %} {% block main %}
+<table class="table-bordered table-striped table">
+  <thead class="thead-light">
+    <tr>
+      <th>Symbol</th>
+      <th>Name</th>
+      <th>Shares</th>
+      <th>Price</th>
+      <th>Total Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+    <tr>
+      <td>{{ row['symbol'] }}</td>
+      <td>{{ row['name'] }}</td>
+      <td>{{ row['shares'] }}</td>
+      <td>{{ row['price_usd'] }}</td>
+      <td>{{ row['total_usd'] }}</td>
+    </tr>
+    {% endfor %}
+    <tr>
+      <td colspan="4" align="right">Cash</td>
+      <td>{{ cash }}</td>
+    </tr>
+    <tr>
+      <td colspan="4" align="right">Total Value</td>
+      <td>{{ sum }}</td>
+    </tr>
+  </tbody>
+</table>
 {% endblock %}
 ```
+
 **login.html**
+
 ```html
-{% extends "layout.html" %}
-
-{% block title %}
-    Log In
-{% endblock %}
-
-{% block main %}
-    <form action="/login" method="post">
-        <div class="mb-3">
-            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text">
-        </div>
-        <div class="mb-3">
-            <input class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password">
-        </div>
-        <button class="btn btn-primary" type="submit">Log In</button>
-    </form>
+{% extends "layout.html" %} {% block title %} Log In {% endblock %} {% block
+main %}
+<form action="/login" method="post">
+  <div class="mb-3">
+    <input
+      autocomplete="off"
+      autofocus
+      class="form-control mx-auto w-auto"
+      name="username"
+      placeholder="Username"
+      type="text"
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      class="form-control mx-auto w-auto"
+      name="password"
+      placeholder="Password"
+      type="password"
+    />
+  </div>
+  <button class="btn btn-primary" type="submit">Log In</button>
+</form>
 {% endblock %}
 ```
+
 **quote.html**
+
 ```html
-{% extends "layout.html" %}
-
-{% block title %}
-    Quote
-{% endblock %}
-
-{% block main %}
-    <h2>Get a stock quote</h2>
-    <form action="/quote" method="post">
-        <input autofocus name="symbol" placeholder="Symbol" type="text">
-        <button type="submit">Get Quote</button>
-    </form>
+{% extends "layout.html" %} {% block title %} Quote {% endblock %} {% block main
+%}
+<h2>Get a stock quote</h2>
+<form action="/quote" method="post">
+  <input autofocus name="symbol" placeholder="Symbol" type="text" />
+  <button type="submit">Get Quote</button>
+</form>
 {% endblock %}
 ```
+
 **quoted.html**
+
 ```html
-{% extends "layout.html" %}
-
-{% block title %}
-    Quote
-{% endblock %}
-
-{% block main %}
-    A share of {{ symbol['name']}} ({{symbol['symbol']}}) costs {{ symbol['price'] | usd}}
-{% endblock %}
+{% extends "layout.html" %} {% block title %} Quote {% endblock %} {% block main
+%} A share of {{ symbol['name']}} ({{symbol['symbol']}}) costs {{
+symbol['price'] | usd}} {% endblock %}
 ```
+
 **register.html**
+
 ```html
-{% extends "layout.html" %}
-
-{% block title %}
-    Register
-{% endblock %}
-
-{% block main %}
-    <form action="/register" method="post">
-        <div class="mb-3">
-            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="username" placeholder="Username" type="text">
-        </div>
-        <div class="mb-3">
-            <input class="form-control mx-auto w-auto" name="password" placeholder="Password" type="password">
-        </div>
-        <div class="mb-3">
-            <input class="form-control mx-auto w-auto" name="confirmation" placeholder="Confirmation" type="password">
-        </div>
-        <button class="btn btn-primary" type="submit">Register</button>
-    </form>
+{% extends "layout.html" %} {% block title %} Register {% endblock %} {% block
+main %}
+<form action="/register" method="post">
+  <div class="mb-3">
+    <input
+      autocomplete="off"
+      autofocus
+      class="form-control mx-auto w-auto"
+      name="username"
+      placeholder="Username"
+      type="text"
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      class="form-control mx-auto w-auto"
+      name="password"
+      placeholder="Password"
+      type="password"
+    />
+  </div>
+  <div class="mb-3">
+    <input
+      class="form-control mx-auto w-auto"
+      name="confirmation"
+      placeholder="Confirmation"
+      type="password"
+    />
+  </div>
+  <button class="btn btn-primary" type="submit">Register</button>
+</form>
 {% endblock %}
 ```
+
 **sell.html**
+
 ```html
-{% extends "layout.html" %}
-
-{% block title %}
-    Sell
-{% endblock %}
-
-{% block main %}
-    <h2>Sell Shares</h2>
-    <form action="/sell" method="post">
-        <div>
-            <select class="form-control" name="symbol" type="text">
-                <option value="" disabled selected>Symbol</option>
-                {% for row in portfolio %}
-                    <option value="{{ row['symbol'] }}">{{ row['symbol'] }}</option>
-                {% endfor %}
-            </select>
-        </div>
-        <div>
-            <input name="shares" placeholder="Shares" type="number" min="1">
-        </div>
-        <button type="submit">Sell</button>
-    </form>
+{% extends "layout.html" %} {% block title %} Sell {% endblock %} {% block main
+%}
+<h2>Sell Shares</h2>
+<form action="/sell" method="post">
+  <div>
+    <select class="form-control" name="symbol" type="text">
+      <option value="" disabled selected>Symbol</option>
+      {% for row in portfolio %}
+      <option value="{{ row['symbol'] }}">{{ row['symbol'] }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <input name="shares" placeholder="Shares" type="number" min="1" />
+  </div>
+  <button type="submit">Sell</button>
+</form>
 {% endblock %}
 ```

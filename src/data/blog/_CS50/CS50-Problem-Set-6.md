@@ -6,13 +6,16 @@ tags:
   - CS50
 description: Answer for CS50 Problem Set 6
 ---
+
 ## Table of contents
 
 # CS50 Problem Set 6
-Here's my answer for the CS50 Problem Set 6. Hope that will help you a bit. 
+
+Here's my answer for the CS50 Problem Set 6. Hope that will help you a bit.
 ![](https://cdn.jsdelivr.net/gh/kinghua0629/kinghua0629-blog-img/20260318203536655.webp)
 
 ## Problem 1: [Hello, Again](https://cs50.harvard.edu/x/psets/6/hello/#hello-again)
+
 ```python
 name = input("What is your name? ")
 
@@ -20,6 +23,7 @@ print(f"hello, {name}")
 ```
 
 ## Probelm 2: [Mario](https://cs50.harvard.edu/x/psets/6/mario/more/#mario)
+
 ```python
 while True:
     try:
@@ -51,6 +55,7 @@ for i in range(1, h+1):
 ```
 
 ## Problem 3: [Credit](https://cs50.harvard.edu/x/psets/6/credit/#credit)
+
 ```python
 while True:
     number = input("Number: ")
@@ -151,6 +156,7 @@ else:
 ```
 
 ## Problem 4: [Readability](https://cs50.harvard.edu/x/psets/6/readability/#readability)
+
 ```python
 def words(text):
     words = 1
@@ -191,6 +197,7 @@ else:
 ```
 
 ## Problem 5: [DNA](https://cs50.harvard.edu/x/psets/6/dna/#dna)
+
 ```python
 import csv
 import sys

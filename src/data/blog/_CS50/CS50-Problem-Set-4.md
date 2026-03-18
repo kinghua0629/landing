@@ -6,13 +6,16 @@ tags:
   - CS50
 description: Answer for CS50 Problem Set 4
 ---
+
 ## Table of contents
 
 # CS50 Problem Set 4
-Here's my answer for the CS50 Problem Set 4. Hope that will help you a bit. 
+
+Here's my answer for the CS50 Problem Set 4. Hope that will help you a bit.
 ![](https://cdn.jsdelivr.net/gh/kinghua0629/kinghua0629-blog-img/20260318203536655.webp)
 
 ## Problem 1: [Volume](https://cs50.harvard.edu/x/psets/4/volume/#volume)
+
 ```c
 // Modifies the volume of an audio file
 
@@ -70,6 +73,7 @@ int main(int argc, char *argv[])
 ```
 
 ## Problem 2: [Filter](https://cs50.harvard.edu/x/psets/4/filter/less/#filter)
+
 ```c
 #include "helpers.h"
 #include <math.h>
@@ -209,6 +213,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 ```
 
 ## Problem 3: [Recover](https://cs50.harvard.edu/x/psets/4/recover/#recover)
+
 ```c
 #include <stdint.h>
 #include <stdio.h>

@@ -6,10 +6,12 @@ tags:
   - CS50
 description: Answer for CS50 Problem Set 2
 ---
+
 ## Table of contents
 
 # CS50 Problem Set 2
-Here's my answer for the CS50 Problem Set 2. Hope that will help you a bit. 
+
+Here's my answer for the CS50 Problem Set 2. Hope that will help you a bit.
 ![](https://cdn.jsdelivr.net/gh/kinghua0629/kinghua0629-blog-img/20260318203536655.webp)
 
 ## Problem 1: [Scrabble](https://cs50.harvard.edu/x/psets/2/scrabble/#scrabble)

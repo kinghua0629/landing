@@ -6,13 +6,16 @@ tags:
   - CS50
 description: Answer for CS50 Problem Set 1
 ---
+
 ## Table of contents
 
 # CS50 Problem Set 1
-Here's my answer for the CS50 Problem Set 1. Hope that will help you a bit. 
+
+Here's my answer for the CS50 Problem Set 1. Hope that will help you a bit.
 ![](https://cdn.jsdelivr.net/gh/kinghua0629/kinghua0629-blog-img/20260318203536655.webp)
 
-## Problem 1:  [Hello, It’s Me](https://cs50.harvard.edu/x/psets/1/me/#hello-its-me)
+## Problem 1: [Hello, It’s Me](https://cs50.harvard.edu/x/psets/1/me/#hello-its-me)
+
 ```c
 #include <cs50.h>
 #include <stdio.h>
@@ -26,6 +29,7 @@ int main(void)
 ```
 
 ## Problem 2: [Mario](https://cs50.harvard.edu/x/psets/1/mario/more/#mario)
+
 ```c
 #include <cs50.h>
 #include <stdio.h>
@@ -75,6 +79,7 @@ void mario(int n)
 ```
 
 ## Problem 3: [Cash](https://cs50.harvard.edu/x/psets/1/cash/)
+
 ```c
 #include <cs50.h>
 #include <stdio.h>

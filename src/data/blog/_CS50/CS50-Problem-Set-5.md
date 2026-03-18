@@ -6,13 +6,16 @@ tags:
   - CS50
 description: Answer for CS50 Problem Set 5
 ---
+
 ## Table of contents
 
 # CS50 Problem Set 5
-Here's my answer for the CS50 Problem Set 5. Hope that will help you a bit. 
+
+Here's my answer for the CS50 Problem Set 5. Hope that will help you a bit.
 ![](https://cdn.jsdelivr.net/gh/kinghua0629/kinghua0629-blog-img/20260318203536655.webp)
 
 ## Problem 1: [Inheritance](https://cs50.harvard.edu/x/psets/5/inheritance/#inheritance)
+
 ```c
 // Simulate genetic inheritance of blood type
 #define _DEFAULT_SOURCE
@@ -169,6 +172,7 @@ char random_allele()
 ```
 
 ## Problem 2: [Speller](https://cs50.harvard.edu/x/psets/5/speller/#speller)
+
 ```c
 // Implements a dictionary's functionality
 

@@ -6,13 +6,16 @@ tags:
   - CS50
 description: Answer for CS50 Problem Set 3
 ---
+
 ## Table of contents
 
 # CS50 Problem Set 3
-Here's my answer for the CS50 Problem Set 3. Hope that will help you a bit. 
+
+Here's my answer for the CS50 Problem Set 3. Hope that will help you a bit.
 ![](https://cdn.jsdelivr.net/gh/kinghua0629/kinghua0629-blog-img/20260318203536655.webp)
 
 ## Problem 1: [Sort](https://cs50.harvard.edu/x/psets/3/sort/#sort)
+
 ```txt
 sort1 uses: bubble sort
 
@@ -24,10 +27,11 @@ How do you know?: the time sort2 uses to sort every kind of txt is the least bet
 
 sort3 uses: selection sort
 
-How do you know?: the time it uses to sort three kinds of txt is almost the same, but it cost more time than sort2. 
+How do you know?: the time it uses to sort three kinds of txt is almost the same, but it cost more time than sort2.
 ```
 
 ## Problem 2: [Plurality](https://cs50.harvard.edu/x/psets/3/plurality/#plurality)
+
 ```c
 #include <cs50.h>
 #include <stdio.h>
@@ -131,6 +135,7 @@ void print_winner(void)
 ```
 
 ## Problem 3: [Runoff](https://cs50.harvard.edu/x/psets/3/runoff/#runoff)
+
 ```c
 #include <cs50.h>
 #include <stdio.h>

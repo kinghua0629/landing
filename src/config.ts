@@ -3,7 +3,7 @@ export const SITE = {
   author: "King Hua",
   profile: "https://landing.kinghua0629.com/",
   desc: "My personal landing page",
-  title: "King's Protofolio",
+  title: "King's Profile",
   ogImage: "",
   lightAndDarkMode: true,
   postPerIndex: 4,

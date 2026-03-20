@@ -29,7 +29,7 @@ title: "About"
 ![这是我最喜欢的车手之一的皮亚斯特里](https://cdn.jsdelivr.net/gh/kinghua0629/kinghua0629-blog-img/20260317215816008.webp)
 **_我最喜欢的公式：麦克斯韦方程组_**
 
-$$ \left\{\begin{matrix} \oint*{\partial V} \mathbf{E} \cdot d\mathbf{A} = \frac{Q*{\text{enc}}}{\varepsilon*0} \\ \oint*{\partial V} \mathbf{B} \cdot d\mathbf{A} = 0 \\ \oint*{\partial S} \mathbf{E} \cdot d\mathbf{l} = -\frac{d}{dt} \int*{S} \mathbf{B} \cdot d\mathbf{A} \\ \oint*{\partial S} \mathbf{B} \cdot d\mathbf{l} = \mu_0 \left( I*{\text{enc}} + \varepsilon*0 \frac{d}{dt} \int*{S} \mathbf{E} \cdot d\mathbf{A} \right)\end{matrix}\right. $$
+$$ \left\{\begin{matrix} \oint_{\partial V} \mathbf{E} \cdot d\mathbf{A} = \frac{Q_{\text{enc}}}{\varepsilon_0} \\ \oint_{\partial V} \mathbf{B} \cdot d\mathbf{A} = 0 \\ \oint_{\partial S} \mathbf{E} \cdot d\mathbf{l} = -\frac{d}{dt} \int_{S} \mathbf{B} \cdot d\mathbf{A} \\ \oint_{\partial S} \mathbf{B} \cdot d\mathbf{l} = \mu_0 \left( I_{\text{enc}} + \varepsilon_0 \frac{d}{dt} \int_{S} \mathbf{E} \cdot d\mathbf{A} \right)\end{matrix}\right. $$
 
 $$ \left\{\begin{matrix} \nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0} \\ \nabla \cdot \mathbf{B} = 0 \\ \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} \\ \nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}\end{matrix}\right. $$
 
@@ -205,7 +205,8 @@ Welcome. Strap in—our thought experiment is about to begin.
 ![This is one of my favour driver Oscar Piastri](https://cdn.jsdelivr.net/gh/kinghua0629/kinghua0629-blog-img/20260317215816008.webp)
 
 **_My favourite formula: Maxwell's equations_**
-$$ \left\{\begin{matrix} \oint*{\partial V} \mathbf{E} \cdot d\mathbf{A} = \frac{Q*{\text{enc}}}{\varepsilon*0} \\ \oint*{\partial V} \mathbf{B} \cdot d\mathbf{A} = 0 \\ \oint*{\partial S} \mathbf{E} \cdot d\mathbf{l} = -\frac{d}{dt} \int*{S} \mathbf{B} \cdot d\mathbf{A} \\ \oint*{\partial S} \mathbf{B} \cdot d\mathbf{l} = \mu_0 \left( I*{\text{enc}} + \varepsilon*0 \frac{d}{dt} \int*{S} \mathbf{E} \cdot d\mathbf{A} \right)\end{matrix}\right. $$
+
+$$ \left\{\begin{matrix} \oint_{\partial V} \mathbf{E} \cdot d\mathbf{A} = \frac{Q_{\text{enc}}}{\varepsilon_0} \\ \oint_{\partial V} \mathbf{B} \cdot d\mathbf{A} = 0 \\ \oint_{\partial S} \mathbf{E} \cdot d\mathbf{l} = -\frac{d}{dt} \int_{S} \mathbf{B} \cdot d\mathbf{A} \\ \oint_{\partial S} \mathbf{B} \cdot d\mathbf{l} = \mu_0 \left( I_{\text{enc}} + \varepsilon_0 \frac{d}{dt} \int_{S} \mathbf{E} \cdot d\mathbf{A} \right)\end{matrix}\right. $$
 
 $$ \left\{\begin{matrix} \nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0} \\ \nabla \cdot \mathbf{B} = 0 \\ \nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t} \\ \nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}\end{matrix}\right. $$
 

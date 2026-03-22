@@ -16,7 +16,7 @@ Here's my answer for the CS50 Problem Set 5. Hope that will help you a bit.
 
 ## Problem 1: [Inheritance](https://cs50.harvard.edu/x/psets/5/inheritance/#inheritance)
 
-```c
+```c file=inheritance.c
 // Simulate genetic inheritance of blood type
 #define _DEFAULT_SOURCE
 #include <stdbool.h>
@@ -173,7 +173,7 @@ char random_allele()
 
 ## Problem 2: [Speller](https://cs50.harvard.edu/x/psets/5/speller/#speller)
 
-```c
+```c file=speller.c
 // Implements a dictionary's functionality
 
 #include <ctype.h>

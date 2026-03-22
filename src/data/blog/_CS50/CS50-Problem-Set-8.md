@@ -16,9 +16,7 @@ Here's my answers for the CS50 Problem Set 8. Hope that will help you a bit.
 
 ## Problem 1: [Trivia](https://cs50.harvard.edu/x/psets/8/trivia/#trivia)
 
-**index.html**
-
-```html
+```html file=index.html
 <!DOCTYPE html>
 
 <html lang="en">
@@ -119,7 +117,7 @@ Here's my answers for the CS50 Problem Set 8. Hope that will help you a bit.
 
 **about.html**
 
-```html
+```html file=about.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -286,9 +284,7 @@ Here's my answers for the CS50 Problem Set 8. Hope that will help you a bit.
 </html>
 ```
 
-**contact.html**
-
-```html
+```html file=contact.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -527,7 +523,7 @@ Here's my answers for the CS50 Problem Set 8. Hope that will help you a bit.
 
 **hobbies.html**
 
-```html
+```html file=hobbies.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -779,7 +775,7 @@ Here's my answers for the CS50 Problem Set 8. Hope that will help you a bit.
 
 **index.html**
 
-```html
+```html index.html
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -928,9 +924,7 @@ Here's my answers for the CS50 Problem Set 8. Hope that will help you a bit.
 </html>
 ```
 
-**script.js**
-
-```javascript
+```javascript file=script.js
 // Wait for DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
   // Welcome button functionality
@@ -1189,9 +1183,7 @@ document.addEventListener("visibilitychange", function () {
 });
 ```
 
-**specification.txt**
-
-```
+```txt file=specification.txt
 HTML Tags Used (10+ distinct tags):
 1. <!DOCTYPE> - Defines the document type
 2. <html> - Root element of the HTML document
@@ -1271,9 +1263,7 @@ The site is fully responsive and works well on:
 - Various screen sizes and orientations
 ```
 
-**style.css**
-
-```css
+```css file=style.css
 /* Body style */
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

@@ -16,7 +16,7 @@ Here's my answer for the CS50 Problem Set 6. Hope that will help you a bit.
 
 ## Problem 1: [Hello, Again](https://cs50.harvard.edu/x/psets/6/hello/#hello-again)
 
-```python
+```python file=hello.py
 name = input("What is your name? ")
 
 print(f"hello, {name}")
@@ -24,7 +24,7 @@ print(f"hello, {name}")
 
 ## Probelm 2: [Mario](https://cs50.harvard.edu/x/psets/6/mario/more/#mario)
 
-```python
+```python file=mario.py
 while True:
     try:
         h = int(input("Height: "))
@@ -56,7 +56,7 @@ for i in range(1, h+1):
 
 ## Problem 3: [Credit](https://cs50.harvard.edu/x/psets/6/credit/#credit)
 
-```python
+```python file=credit.py
 while True:
     number = input("Number: ")
     if number.isdigit() == True:
@@ -157,7 +157,7 @@ else:
 
 ## Problem 4: [Readability](https://cs50.harvard.edu/x/psets/6/readability/#readability)
 
-```python
+```python file=readability.py
 def words(text):
     words = 1
     for i in range(0, len(text)):
@@ -198,7 +198,7 @@ else:
 
 ## Problem 5: [DNA](https://cs50.harvard.edu/x/psets/6/dna/#dna)
 
-```python
+```python file=dna.py
 import csv
 import sys
 

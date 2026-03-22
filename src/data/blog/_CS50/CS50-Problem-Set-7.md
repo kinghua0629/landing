@@ -16,47 +16,35 @@ Here's my answer for the CS50 Problem Set 7. Hope that will help you a bit.
 
 ## Problem 1: [Songs](https://cs50.harvard.edu/x/psets/7/songs/#songs)
 
-**1.sql**
-
-```sql
+```sql file=1.sql
 SELECT name FROM songs;
 ```
 
-**2.sql**
-
-```sql
+```sql file=2.sql
 SELECT name
 FROM songs
 ORDER BY tempo;
 ```
 
-**3.sql**
-
-```sql
+```sql file=3.sql
 SELECT name
 FROM songs
 ORDER BY duration_ms DESC
 LIMIT 5;
 ```
 
-**4.sql**
-
-```sql
+```sql file=4.sql
 SELECT name
 FROM songs
 WHERE danceability > 0.75 AND energy > 0.75 AND valence > 0.75;
 ```
 
-**5.sql**
-
-```sql
+```sql file=5.sql
 SELECT AVG(energy)
 FROM songs;
 ```
 
-**6.sql**
-
-```sql
+```sql file=6.sql
 SELECT name
 FROM songs
 WHERE artist_id = (
@@ -66,9 +54,7 @@ WHERE artist_id = (
 );
 ```
 
-**7.sql**
-
-```sql
+```sql file=7.sql
 SELECT AVG(energy)
 FROM songs
 WHERE artist_id = (
@@ -78,17 +64,13 @@ WHERE artist_id = (
 );
 ```
 
-**8.sql**
-
-```sql
+```sql file=8.sql
 SELECT name
 FROM songs
 WHERE name LIKE '%feat.%';
 ```
 
-**answers.txt**
-
-```
+```txt file=answers.txt
 1. I will use the SQL to count the average energy, valence, and danceability of a person’s top 100 songs from the past year.
 
 2. I should consider how many times they listen to each music.
@@ -96,27 +78,21 @@ WHERE name LIKE '%feat.%';
 
 ## Problem 2: [Movies](https://cs50.harvard.edu/x/psets/7/movies/#movies)
 
-**1.sql**
-
-```sql
+```sql file=1.sql
 -- 1. Titles of all movies from 2008
 SELECT title
 FROM movies
 WHERE year = 2008;
 ```
 
-**2.sql**
-
-```sql
+```sql file=2.sql
 -- 2. Birth year of Emma Stone
 SELECT birth
 FROM people
 WHERE name = 'Emma Stone';
 ```
 
-**3.sql**
-
-```sql
+```sql file=3.sql
 -- 3. Titles of all movies since 2018, in alphabetical order
 SELECT title
 FROM movies
@@ -124,18 +100,14 @@ WHERE year >= 2018
 ORDER BY title ASC;
 ```
 
-**4.sql**
-
-```sql
+```sql file=4.sql
 -- 4. Number of movies with a 10.0 rating
 SELECT COUNT(rating)
 FROM ratings
 WHERE rating = 10.0
 ```
 
-**5.sql**
-
-```sql
+```sql file=5.sql
 -- 5. Titles and years of all Harry Potter movies, in chronological order (title beginning with "Harry Potter and the ...")
 SELECT title, year
 FROM movies
@@ -143,9 +115,7 @@ WHERE title LIKE "Harry Potter and the%"
 ORDER BY year;
 ```
 
-**6.sql**
-
-```sql
+```sql file=6.sql
 -- 6. Average rating of movies in 2012
 SELECT AVG(rating)
 FROM ratings
@@ -154,9 +124,7 @@ WHERE movie_id IN (
 )
 ```
 
-**7.sql**
-
-```sql
+```sql file=7.sql
 -- 7. All movies and ratings from 2010, in decreasing order by rating (alphabetical for those with same rating)
 SELECT movies.title, ratings.rating
 FROM movies
@@ -165,9 +133,7 @@ ON movies.id = ratings.movie_id AND movies.year = 2010 AND ratings.rating > 0
 ORDER BY ratings.rating DESC, title ASC;
 ```
 
-**8.sql**
-
-```sql
+```sql file=8.sql
 -- 8. Names of people who starred in Toy Story
 SELECT name
 FROM people
@@ -182,9 +148,7 @@ WHERE id IN(
 );
 ```
 
-**9.sql**
-
-```sql
+```sql file=9.sql
 -- 9. Names of all people who starred in a movie released in 2004, ordered by birth year
 SELECT id, name
 FROM people
@@ -200,9 +164,7 @@ WHERE id IN(
 ORDER BY birth;
 ```
 
-**10.sql**
-
-```sql
+```sql file=10.sql
 -- 10. Names of all directors who have directed a movie that got a rating of at least 9.0
 SELECT name
 FROM people
@@ -217,9 +179,7 @@ WHERE id IN (
 );
 ```
 
-**11.sql**
-
-```sql
+```sql file=11.sql
 -- 11. Titles of the five highest rated movies (in order) that Chadwick Boseman starred in, starting with the highest rated
 SELECT title
 FROM movies
@@ -237,9 +197,7 @@ ORDER BY ratings.rating DESC
 LIMIT 5;
 ```
 
-**12.sql**
-
-```sql
+```sql file=12.sql
 -- 12. Titles of all of movies in which both Jennifer Lawrence and Bradley Cooper starred
 SELECT title
 FROM movies
@@ -267,9 +225,7 @@ AND (
 );
 ```
 
-**13.sql**
-
-```sql
+```sql file=13.sql
 -- 13. Names of all people who starred in a movie in which Kevin Bacon also starred
 SELECT name
 FROM people
@@ -287,17 +243,13 @@ AND people.name != 'Kevin Bacon';
 
 ## Problem 3: [Fiftyville](https://cs50.harvard.edu/x/psets/7/fiftyville/#fiftyville)
 
-**answers.txt**
-
-```
+```txt file=answers.txt
 The THIEF is: Bruce
 The city the thief ESCAPED TO: New York City
 The ACCOMPLICE is: Robin
 ```
 
-**log.sql**
-
-```sql
+```sql file=log.sql
 -- Keep a log of any SQL queries you execute as you solve the mystery.
 -- Get the description of the crime scene reports on that day and the street
 SELECT description FROM crime_scene_reports

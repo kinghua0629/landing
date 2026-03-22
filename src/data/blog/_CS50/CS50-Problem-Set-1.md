@@ -16,7 +16,7 @@ Here's my answer for the CS50 Problem Set 1. Hope that will help you a bit.
 
 ## Problem 1: [Hello, It’s Me](https://cs50.harvard.edu/x/psets/1/me/#hello-its-me)
 
-```c
+```c file=hello.c
 #include <cs50.h>
 #include <stdio.h>
 
@@ -30,7 +30,7 @@ int main(void)
 
 ## Problem 2: [Mario](https://cs50.harvard.edu/x/psets/1/mario/more/#mario)
 
-```c
+```c file=mario.c
 #include <cs50.h>
 #include <stdio.h>
 
@@ -80,7 +80,7 @@ void mario(int n)
 
 ## Problem 3: [Cash](https://cs50.harvard.edu/x/psets/1/cash/)
 
-```c
+```c file=cash.c
 #include <cs50.h>
 #include <stdio.h>
 

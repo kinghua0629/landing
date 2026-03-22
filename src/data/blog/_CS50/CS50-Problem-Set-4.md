@@ -16,7 +16,7 @@ Here's my answer for the CS50 Problem Set 4. Hope that will help you a bit.
 
 ## Problem 1: [Volume](https://cs50.harvard.edu/x/psets/4/volume/#volume)
 
-```c
+```c file=volume.c
 // Modifies the volume of an audio file
 
 #include <stdint.h>
@@ -74,7 +74,7 @@ int main(int argc, char *argv[])
 
 ## Problem 2: [Filter](https://cs50.harvard.edu/x/psets/4/filter/less/#filter)
 
-```c
+```c file=filter.c
 #include "helpers.h"
 #include <math.h>
 
@@ -214,7 +214,7 @@ void blur(int height, int width, RGBTRIPLE image[height][width])
 
 ## Problem 3: [Recover](https://cs50.harvard.edu/x/psets/4/recover/#recover)
 
-```c
+```c file=recover.c
 #include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>

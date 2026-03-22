@@ -13,6 +13,8 @@ description: The video demo for my CS50 Final Project
 
 This is the video of my CS50 final project. 
 
+![](https://cdn.jsdelivr.net/gh/kinghua0629/kinghua0629-blog-img/20260318203536655.webp)
+
 ## YouTube
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tzwww0bJy3c?si=rhqI5xAUwnntphIj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

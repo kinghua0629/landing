@@ -16,7 +16,7 @@ Here's my answer for the CS50 Problem Set 3. Hope that will help you a bit.
 
 ## Problem 1: [Sort](https://cs50.harvard.edu/x/psets/3/sort/#sort)
 
-```txt
+```txt file=answers.txt
 sort1 uses: bubble sort
 
 How do you know?: When sorting the sorted numbers, bubble sort's time complexity is omega(n); while sorting the random numbers, bubble sort's time complexity is O(n^2).
@@ -32,7 +32,7 @@ How do you know?: the time it uses to sort three kinds of txt is almost the same
 
 ## Problem 2: [Plurality](https://cs50.harvard.edu/x/psets/3/plurality/#plurality)
 
-```c
+```c file=plurality.c
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>
@@ -136,7 +136,7 @@ void print_winner(void)
 
 ## Problem 3: [Runoff](https://cs50.harvard.edu/x/psets/3/runoff/#runoff)
 
-```c
+```c file=runoff.c
 #include <cs50.h>
 #include <stdio.h>
 #include <string.h>

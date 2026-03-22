@@ -16,7 +16,7 @@ Here's my answer for the CS50 Problem Set 2. Hope that will help you a bit.
 
 ## Problem 1: [Scrabble](https://cs50.harvard.edu/x/psets/2/scrabble/#scrabble)
 
-```c
+```c file=scrabble.c
 #include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>
@@ -72,7 +72,7 @@ int compute_score(string word)
 
 ## Problem 2: [Readability](https://cs50.harvard.edu/x/psets/2/readability/#readability)
 
-```c
+```c file=readability.c
 #include <cs50.h>
 #include <ctype.h>
 #include <math.h>
@@ -149,7 +149,7 @@ int sentences(string text)
 
 ## Problem 3: [Substitution](https://cs50.harvard.edu/x/psets/2/substitution/#substitution)
 
-```c
+```c file=substitution.c
 #include <cs50.h>
 #include <ctype.h>
 #include <stdio.h>

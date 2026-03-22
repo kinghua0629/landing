@@ -36,26 +36,26 @@ async function loadGoogleFonts(
 > {
   const fontsConfig = [
     {
-      name: "Noto Serif",
-      font: "Noto+Serif",
+      name: "Noto Sans",
+      font: "Noto+Sans",
       weight: 400,
       style: "normal",
     },
     {
-      name: "Noto Serif",
-      font: "Noto+Serif",
+      name: "Noto Sans",
+      font: "Noto+Sans",
       weight: 700,
       style: "bold",
     },
     {
-      name: "Noto Serif SC",
-      font: "Noto+Serif+SC",
+      name: "Noto Sans SC",
+      font: "Noto+Sans+SC",
       weight: 400,
       style: "normal",
     },
     {
-      name: "Noto Serif SC",
-      font: "Noto+Serif+SC",
+      name: "Noto Sans SC",
+      font: "Noto+Sans+SC",
       weight: 700,
       style: "bold",
     },

@@ -38,7 +38,7 @@ export const SOCIALS: Social[] = [
   },
   {
     name: "Mail",
-    href: "mailto:kinghua0629@outlook.com",
+    href: "mailto:contact@kinghua0629.com",
     linkTitle: `Send an email to ${SITE.title}`,
     icon: IconMail,
   },
@@ -77,7 +77,7 @@ export const SHARE_LINKS: Social[] = [
   },
   {
     name: "Mail",
-    href: "mailto:?subject=See%20this%20post&body=",
+    href: "mailto:contact@kinghua0629.com?subject=See%20this%20post&body=",
     linkTitle: `Share this post via email`,
     icon: IconMail,
   },

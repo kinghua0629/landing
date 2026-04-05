@@ -1,9 +1,9 @@
 export const SITE = {
-  website: "https://landing.kinghua0629.com/", // replace this with your deployed domain
+  website: "https://oscar0629.com/", // replace this with your deployed domain
   author: "King Hua",
-  profile: "https://landing.kinghua0629.com/",
-  desc: "My personal landing page",
-  title: "King's Profile",
+  profile: "https://oscar0629.com/",
+  desc: "My personal profile",
+  title: "Ziwen's Profile",
   ogImage: "",
   lightAndDarkMode: true,
   postPerIndex: 4,

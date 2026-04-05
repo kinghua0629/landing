@@ -1,8 +1,8 @@
 export const SITE = {
-  website: "https://oscar0629.com/", // replace this with your deployed domain
-  author: "King Hua",
-  profile: "https://oscar0629.com/",
-  desc: "My personal profile",
+  website: "https://oscarhua0629.com/", // replace this with your deployed domain
+  author: "Ziwen Hua",
+  profile: "https://oscarhua0629.com/",
+  desc: "Ziwen's personal profile",
   title: "Ziwen's Profile",
   ogImage: "",
   lightAndDarkMode: true,

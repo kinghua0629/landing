@@ -5,7 +5,7 @@ title: "About"
 
 你好！这里是一个代码与赛车并轨飞驰的世界。
 
-我是**_King_**，一名计算机专业的大一学生，同时也是一个血液里流淌着汽油与二进制代码的F1狂热分子。
+我是**_Oscar Hua_**，一名计算机专业的大一学生，同时也是一个血液里流淌着汽油与二进制代码的F1狂热分子。
 
 对我来说，计算机科学与F1赛车是同一枚硬币的两面：它们都是人类智慧在极限边界上的舞蹈。我痴迷于代码从逻辑到创造的魔法，也同样为赛道上毫秒间的策略博弈与空气动力学奇迹而心跳加速。
 
@@ -183,7 +183,7 @@ if __name__ == "__main__":
 
 Hello! Welcome to a world where code and racing converge at full speed.
 
-I’m **_King_**, a first-year computer science student and an F1 enthusiast whose veins run with gasoline and binary code.
+I’m **_Ziwen Hua_** (or **_Oscar Hua_**), a first-year computer science student and an F1 enthusiast whose veins run with gasoline and binary code.
 
 To me, computer science and Formula 1 are two sides of the same coin—both are a dance of human intellect at the edge of possibility. I’m captivated by the magic that turns logic into creation through code, just as I’m thrilled by the split-second strategy and aerodynamic wonders on the racetrack.
 

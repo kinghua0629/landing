@@ -23,7 +23,7 @@
     "@types/react-dom": "^19.2.3",
     "astro": "^5.18.1",
     "dayjs": "^1.11.20",
-    "katex": "^0.16.44",
+    "katex": "^0.16.45",
     "lodash.kebabcase": "^4.1.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",

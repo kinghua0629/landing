@@ -4,7 +4,7 @@ author: King Hua
 pubDatetime: 2026-03-18T11:35:16Z
 tags:
   - CS50
-description: Answer for CS50 Problem Set 9
+description: Answer for CS50 Problem Set 8
 ---
 
 ## Table of contents

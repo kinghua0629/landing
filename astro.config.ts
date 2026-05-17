@@ -12,6 +12,7 @@ import { transformerFileName } from "./src/utils/transformers/fileName";
 import { SITE } from "./src/config";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
+import mdx from "@astrojs/mdx";
 
 import react from "@astrojs/react";
 
@@ -20,7 +21,7 @@ export default defineConfig({
   site: SITE.website,
   integrations: [sitemap({
     filter: page => SITE.showArchives || !page.endsWith("/archives"),
-  }), react()],
+  }), react(), mdx()],
   markdown: {
     remarkPlugins: [
       remarkToc,

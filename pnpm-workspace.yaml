@@ -1,3 +1,8 @@
 allowBuilds:
   esbuild: false
   sharp: false
+minimumReleaseAgeExclude:
+  - '@shikijs/core@4.2.0'
+  - '@shikijs/primitive@4.2.0'
+  - '@shikijs/transformers@4.2.0'
+  - '@shikijs/types@4.2.0'

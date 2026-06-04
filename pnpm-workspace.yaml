@@ -6,3 +6,4 @@ minimumReleaseAgeExclude:
   - '@shikijs/primitive@4.2.0'
   - '@shikijs/transformers@4.2.0'
   - '@shikijs/types@4.2.0'
+  - astro@6.4.4

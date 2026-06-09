@@ -13,6 +13,7 @@ import { SITE } from "./src/config";
 import remarkMath from "remark-math";
 import rehypeKatex from "rehype-katex";
 import mdx from "@astrojs/mdx";
+import { unified } from "@astrojs/markdown-remark";
 
 import react from "@astrojs/react";
 
@@ -23,12 +24,14 @@ export default defineConfig({
     filter: page => SITE.showArchives || !page.endsWith("/archives"),
   }), react(), mdx()],
   markdown: {
-    remarkPlugins: [
-      remarkToc,
-      [remarkCollapse, { test: "Table of contents" }],
-      remarkMath,
-    ],
-    rehypePlugins: [rehypeKatex],
+    processor: unified({
+      remarkPlugins: [
+        remarkToc,
+        [remarkCollapse, { test: "Table of contents" }],
+        remarkMath,
+      ],
+      rehypePlugins: [rehypeKatex],
+    }),
     shikiConfig: {
       // For more themes, visit https://shiki.style/themes
       themes: { light: "min-light", dark: "night-owl" },

@@ -83,6 +83,5 @@ minimumReleaseAgeExclude:
   - '@tailwindcss/oxide@4.3.1'
   - '@tailwindcss/vite@4.3.1'
   - eslint@10.5.0
-  - node-gyp@13.0.0
-  - tailwindcss@4.3.1
   - node-gyp
+  - tailwindcss@4.3.1

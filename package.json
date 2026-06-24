@@ -44,10 +44,10 @@
     "@shikijs/transformers": "^4.2.0",
     "@tailwindcss/typography": "^0.5.20",
     "@types/lodash.kebabcase": "^4.1.9",
-    "@typescript-eslint/parser": "^8.61.1",
+    "@typescript-eslint/parser": "^8.62.0",
     "eslint": "^10.5.0",
     "eslint-plugin-astro": "^2.0.0",
-    "globals": "^17.6.0",
+    "globals": "^17.7.0",
     "node-addon-api": "^8.8.0",
     "node-gyp": "^13.0.0",
     "pagefind": "^1.5.2",
@@ -55,7 +55,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.8.0",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.61.1"
+    "typescript-eslint": "^8.62.0"
   },
   "packageManager": "pnpm@11.8.0"
 }

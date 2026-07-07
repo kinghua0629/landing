@@ -42,7 +42,7 @@ export default defineConfig({
         transformerNotationHighlight(),
         transformerNotationWordHighlight(),
         transformerNotationDiff({ matchAlgorithm: "v3" }),
-      ],
+      ] as any,
     },
   },
   vite: {

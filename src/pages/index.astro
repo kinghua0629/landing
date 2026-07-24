@@ -22,7 +22,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 <Layout>
   <Header />
   <main id="main-content" data-layout="index" class="app-layout">
-    <section id="hero" class:list={["pt-8 pb-6", "border-b border-border"]}>
+    <section id="hero" class:list={["pt-8 pb-6", "border-border border-b"]}>
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
         Ziwen Hua's Profile
       </h1>
@@ -36,27 +36,28 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
         <IconRss
           width={20}
           height={20}
-          class="scale-125 stroke-accent stroke-3 rtl:-rotate-90"
+          class="stroke-accent scale-125 stroke-3 rtl:-rotate-90"
         />
         <span class="sr-only">RSS Feed</span>
       </a>
 
       <p>
-        Welcome to my profile! I'm <b>Ziwen Hua</b> (or you can call me <b>Oscar Hua</b>), a student & engineer with a passion
-        for computer science & engineering and mechanical engineering. You're
-        welcome to take a look at my projects and blog posts to see what I've
-        been working on.
+        Welcome to my profile! I'm <b>Ziwen Hua</b> (or you can call me <b
+          >King Hua</b
+        >), a student & engineer with a passion for computer science &
+        engineering and mechanical engineering. You're welcome to take a look at
+        my projects and blog posts to see what I've been working on.
       </p>
       <p class="mt-2">
         For more infomation, check my&nbsp;
         <LinkButton
-          class="font-semibold underline decoration-dashed underline-offset-4 hover:text-accent"
+          class="hover:text-accent font-semibold underline decoration-dashed underline-offset-4"
           href="https://oscarhua0629.com/about/"
         >
           About Page
         </LinkButton> or take a look at&nbsp;
         <LinkButton
-          class="font-semibold underline decoration-dashed underline-offset-4 hover:text-accent"
+          class="hover:text-accent font-semibold underline decoration-dashed underline-offset-4"
           href="https://oscarhua0629.com/CV/"
         >
           my CV
@@ -73,41 +74,41 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
       }
     </section>
 
-    <section id="hero" class:list={["pt-8 pb-6", "border-b border-border"]}>
+    <section id="hero" class:list={["pt-8 pb-6", "border-border border-b"]}>
       <h1 class="text-2xl font-semibold tracking-wide">
         My Education Experience
       </h1>
-      <p class="mt-2 font-semibold text-accent">
+      <p class="text-accent mt-2 font-semibold">
         2026.09 ~ Present: Undergraduate Student
       </p>
       <p class="mt-1">
         <b>University of Maryland, College Park, MD, USA&nbsp;</b>
         <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
+          class="hover:text-accent underline decoration-dashed underline-offset-4"
           href="https://www.umd.edu/"
         >
           (Website)
         </LinkButton>
       </p>
-      <p class="mt-2 font-semibold text-accent">
+      <p class="text-accent mt-2 font-semibold">
         2022.09 ~ 2025.06: Grade 10 ~ Grade 12, High School Diploma
       </p>
       <p class="mt-1">
         <b>Shanghai NO.2 High School, Meilong Campus, Shanghai, China&nbsp;</b>
         <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
+          class="hover:text-accent underline decoration-dashed underline-offset-4"
           href="https://www.shiers.cn/"
         >
           (Website)
         </LinkButton>
       </p>
-      <p class="mt-2 font-semibold text-accent">
+      <p class="text-accent mt-2 font-semibold">
         2018.09 ~ 2022.06: Grade 6 ~ Grade 9
       </p>
       <p class="mt-1">
         <b>Shanghai Southwest Model High School, Shanghai, China&nbsp;</b>
         <LinkButton
-          class="underline decoration-dashed underline-offset-4 hover:text-accent"
+          class="hover:text-accent underline decoration-dashed underline-offset-4"
           href="https://xnmf.xhedu.sh.cn/cms/"
         >
           (Website)
@@ -121,7 +122,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
           id="featured"
           class:list={[
             "pt-12 pb-6",
-            { "border-b border-border": recentPosts.length > 0 },
+            { "border-border border-b": recentPosts.length > 0 },
           ]}
         >
           <h2 class="text-2xl font-semibold tracking-wide">Featured</h2>

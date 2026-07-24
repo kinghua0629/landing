@@ -183,7 +183,7 @@ if __name__ == "__main__":
 
 Hello! Welcome to a world where code and racing converge at full speed.
 
-I’m **_Ziwen Hua_** (or **_Oscar Hua_**), a first-year computer science student and an F1 enthusiast whose veins run with gasoline and binary code.
+I’m **_Ziwen Hua_** (or **_King Hua_**), a first-year computer science student and an F1 enthusiast whose veins run with gasoline and binary code.
 
 To me, computer science and Formula 1 are two sides of the same coin—both are a dance of human intellect at the edge of possibility. I’m captivated by the magic that turns logic into creation through code, just as I’m thrilled by the split-second strategy and aerodynamic wonders on the racetrack.
 

@@ -30,7 +30,7 @@ export default defineConfig({
         [remarkCollapse, { test: "Table of contents" }],
         remarkMath,
       ],
-      rehypePlugins: [rehypeKatex],
+      rehypePlugins: [rehypeKatex as any],
     }),
     shikiConfig: {
       // For more themes, visit https://shiki.style/themes

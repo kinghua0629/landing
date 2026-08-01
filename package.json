@@ -21,9 +21,9 @@
     "@giscus/react": "^3.1.0",
     "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/vite": "^4.3.3",
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "astro": "^7.1.5",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.4",
+    "astro": "^7.1.6",
     "dayjs": "^1.11.21",
     "katex": "^0.18.1",
     "lodash.kebabcase": "^4.1.1",
@@ -57,5 +57,5 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.65.0"
   },
-  "packageManager": "pnpm@11.17.0"
+  "packageManager": "pnpm@11.18.0"
 }

@@ -88,8 +88,8 @@ importers:
         specifier: ^1.5.2
         version: 1.5.2
       '@shikijs/transformers':
-        specifier: ^4.3.1
-        version: 4.3.1
+        specifier: ^4.4.1
+        version: 4.4.1
       '@tailwindcss/typography':
         specifier: ^0.5.20
         version: 0.5.20(tailwindcss@4.3.3)
@@ -109,8 +109,8 @@ importers:
         specifier: ^17.8.0
         version: 17.8.0
       node-addon-api:
-        specifier: ^8.9.0
-        version: 8.9.0
+        specifier: ^8.9.1
+        version: 8.9.1
       node-gyp:
         specifier: ^13.0.1
         version: 13.0.1
@@ -1242,6 +1242,10 @@ packages:
     resolution: {integrity: sha512-ANMDxuaPsNMdDC1m4vfvhlDmJweMwkE5XitTwrq2rWHx5jM+dlm4MmHt2PP6t0uejfR77SuhrhJ0zEijIF/uhA==}
     engines: {node: '>=20'}
 
+  '@shikijs/core@4.4.1':
+    resolution: {integrity: sha512-VeR2CY6Nn9/WbisoYLOQZ7HZOnwTrpBuOw4wExjqLnBCi62BNWynBUO6K2uPIASPFJwAv7cX1fUu+LrPlSstcw==}
+    engines: {node: '>=20'}
+
   '@shikijs/engine-javascript@4.3.1':
     resolution: {integrity: sha512-JBItcnPuYq7jVJdZo/vMj94r+szT7XEjHFX+mvFDGSEIbVAXAGyHAHzhbWzpGOwYidCZrErJLLgn2PVeiokHnQ==}
     engines: {node: '>=20'}
@@ -1258,16 +1262,24 @@ packages:
     resolution: {integrity: sha512-CXQRQOYy1leqQ8ceTeJdmXv/bsUY++6QyLpXJ94LZAAYj5X2SKRdc5ipguv4NPyGVKItB2PPwUpRNe0Sjh5S1A==}
     engines: {node: '>=20'}
 
+  '@shikijs/primitive@4.4.1':
+    resolution: {integrity: sha512-ko2OfDoG89YuQ7xL5LtcQiWKb7NIv1Ephb7g48TVU198OzAMLC8lXVEwaJGHK4sUMYrfAGJDqYmNLOLiW/Kz8w==}
+    engines: {node: '>=20'}
+
   '@shikijs/themes@4.3.1':
     resolution: {integrity: sha512-dgpoJ4WqNi2yTmizQHBJ5zcX6j2lE6icN/0yt4l1kkf16jrY/pwPLoTb1ETsWMz0OBLf9ZNvwmxft+cH+N9qSA==}
     engines: {node: '>=20'}
 
-  '@shikijs/transformers@4.3.1':
-    resolution: {integrity: sha512-z6ir0bGDgWcF2FduktEfPgIsdOtIlDiLAjFBgBzE42Q9xHbkkIXZtORHzlLVB71iZP9elEcqKg6keajvOUwE2A==}
+  '@shikijs/transformers@4.4.1':
+    resolution: {integrity: sha512-Sb9Eehas+5EhClpFgNuklwY3aWf354FLaKRCiAWmjdNbHAjoQUpv6WmSj+N19eTXO6GLIWh1dIOH9dxyauhVWw==}
     engines: {node: '>=20'}
 
   '@shikijs/types@4.3.1':
     resolution: {integrity: sha512-CHFxE0jztBIZRHH6gxXE7DXUCFXjReEGxZ/j0rfSLGKZuwp2xBYycEP14875DSa9KLL/6700oxIq6oO6ef9K2g==}
+    engines: {node: '>=20'}
+
+  '@shikijs/types@4.4.1':
+    resolution: {integrity: sha512-GOwCLQDHM5EjGUWNPrhzJbr6JP8V/Dx/CDVkWvbZ1Avw5JFnNUckrgbLmE07qtg4WlW7Q7QFndhjIkeU9XMPvw==}
     engines: {node: '>=20'}
 
   '@shikijs/vscode-textmate@10.0.2':
@@ -2756,8 +2768,8 @@ packages:
   nlcst-to-string@4.0.0:
     resolution: {integrity: sha512-YKLBCcUYKAg0FNlOBT6aI91qFmSiFKiluk655WzPF+DDMA02qIyy8uiRqI8QXtcFpEvll12LpL5MXqEmAZ+dcA==}
 
-  node-addon-api@8.9.0:
-    resolution: {integrity: sha512-ekZMeaaIzSQTSpr7X2X3iJM7lTzgnx8ahAG9pJfT/7+14mlEM8ZYQ9cgCDvSSRbReFK0oHli3WrZdCiRsgAT9Q==}
+  node-addon-api@8.9.1:
+    resolution: {integrity: sha512-4eUQWVPCUUUiBjLnHS3cXWeC6ryoPUc0U3rP7IuzapoGbzMqd/r6KKO0clr0b+snQhsrueFEhCZDdK+LK7hxKg==}
     engines: {node: ^18 || ^20 || >= 21}
 
   node-fetch-native@1.6.7:
@@ -4705,6 +4717,14 @@ snapshots:
       '@types/hast': 3.0.5
       hast-util-to-html: 9.0.5
 
+  '@shikijs/core@4.4.1':
+    dependencies:
+      '@shikijs/primitive': 4.4.1
+      '@shikijs/types': 4.4.1
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.5
+      hast-util-to-html: 9.0.5
+
   '@shikijs/engine-javascript@4.3.1':
     dependencies:
       '@shikijs/types': 4.3.1
@@ -4726,16 +4746,27 @@ snapshots:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.5
 
+  '@shikijs/primitive@4.4.1':
+    dependencies:
+      '@shikijs/types': 4.4.1
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.5
+
   '@shikijs/themes@4.3.1':
     dependencies:
       '@shikijs/types': 4.3.1
 
-  '@shikijs/transformers@4.3.1':
+  '@shikijs/transformers@4.4.1':
     dependencies:
-      '@shikijs/core': 4.3.1
-      '@shikijs/types': 4.3.1
+      '@shikijs/core': 4.4.1
+      '@shikijs/types': 4.4.1
 
   '@shikijs/types@4.3.1':
+    dependencies:
+      '@shikijs/vscode-textmate': 10.0.2
+      '@types/hast': 3.0.5
+
+  '@shikijs/types@4.4.1':
     dependencies:
       '@shikijs/vscode-textmate': 10.0.2
       '@types/hast': 3.0.5
@@ -6659,7 +6690,7 @@ snapshots:
     dependencies:
       '@types/nlcst': 2.0.3
 
-  node-addon-api@8.9.0: {}
+  node-addon-api@8.9.1: {}
 
   node-fetch-native@1.6.7: {}
 

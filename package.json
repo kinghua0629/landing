@@ -46,8 +46,8 @@
     "@types/lodash.kebabcase": "^4.1.9",
     "@typescript-eslint/parser": "^8.65.0",
     "eslint": "^10.8.0",
-    "eslint-plugin-astro": "^3.0.1",
-    "globals": "^17.8.0",
+    "eslint-plugin-astro": "^3.1.0",
+    "globals": "^17.9.0",
     "node-addon-api": "^8.9.1",
     "node-gyp": "^13.0.1",
     "pagefind": "^1.5.2",
@@ -57,5 +57,5 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.65.0"
   },
-  "packageManager": "pnpm@11.18.0"
+  "packageManager": "pnpm@11.19.0"
 }

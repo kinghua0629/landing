@@ -25,7 +25,7 @@
     "@types/react-dom": "^19.2.4",
     "astro": "^7.2.0",
     "dayjs": "^1.11.21",
-    "katex": "^0.18.3",
+    "katex": "^0.18.4",
     "lodash.kebabcase": "^4.1.1",
     "react": "^19.2.8",
     "react-dom": "^19.2.8",
@@ -41,10 +41,10 @@
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@pagefind/default-ui": "^1.5.2",
-    "@shikijs/transformers": "^4.4.2",
+    "@shikijs/transformers": "^4.4.3",
     "@tailwindcss/typography": "^0.5.20",
     "@types/lodash.kebabcase": "^4.1.9",
-    "@typescript-eslint/parser": "^8.66.0",
+    "@typescript-eslint/parser": "^8.67.0",
     "eslint": "^10.8.1",
     "eslint-plugin-astro": "^3.1.0",
     "globals": "^17.9.0",
@@ -55,7 +55,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.66.0"
+    "typescript-eslint": "^8.67.0"
   },
   "packageManager": "pnpm@11.21.0"
 }

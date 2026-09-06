@@ -22,8 +22,8 @@
     "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/vite": "^4.3.3",
     "@types/react": "^19.2.18",
-    "@types/react-dom": "^19.2.5",
-    "astro": "^7.2.10",
+    "@types/react-dom": "^19.2.7",
+    "astro": "^7.3.1",
     "dayjs": "^1.11.23",
     "katex": "^0.18.5",
     "lodash.kebabcase": "^4.1.1",
@@ -45,7 +45,7 @@
     "@tailwindcss/typography": "^0.5.20",
     "@types/lodash.kebabcase": "^4.1.9",
     "@typescript-eslint/parser": "^8.69.0",
-    "eslint": "^10.9.1",
+    "eslint": "^10.10.0",
     "eslint-plugin-astro": "^3.1.0",
     "globals": "^17.12.0",
     "node-addon-api": "^8.9.2",
@@ -57,5 +57,5 @@
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.69.0"
   },
-  "packageManager": "pnpm@11.25.0"
+  "packageManager": "pnpm@12.3.4"
 }

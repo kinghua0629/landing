@@ -13,9 +13,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@astrojs/markdown-remark": "^7.3.4",
-    "@astrojs/mdx": "^8.1.1",
-    "@astrojs/react": "^7.1.1",
+    "@astrojs/markdown-remark": "^7.3.5",
+    "@astrojs/mdx": "^8.1.2",
+    "@astrojs/react": "^7.1.2",
     "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.4",
     "@giscus/react": "^3.1.0",
@@ -23,7 +23,7 @@
     "@tailwindcss/vite": "^4.3.3",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
-    "astro": "^7.4.2",
+    "astro": "^7.4.4",
     "dayjs": "^1.11.23",
     "katex": "^0.19.1",
     "lodash.kebabcase": "^4.1.1",
@@ -40,22 +40,22 @@
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
-    "@pagefind/default-ui": "^1.5.2",
+    "@pagefind/default-ui": "^1.6.0",
     "@shikijs/transformers": "^4.5.0",
     "@tailwindcss/typography": "^0.5.20",
     "@types/lodash.kebabcase": "^4.1.9",
     "@typescript-eslint/parser": "^8.72.1",
-    "eslint": "^10.13.0",
+    "eslint": "^10.14.0",
     "eslint-plugin-astro": "^3.2.1",
-    "globals": "^17.13.0",
+    "globals": "^17.14.0",
     "node-addon-api": "^8.9.2",
     "node-gyp": "^13.1.0",
-    "pagefind": "^1.5.2",
+    "pagefind": "^1.6.0",
     "prettier": "^3.9.10",
     "prettier-plugin-astro": "^1.1.2",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "typescript": "^6.0.3",
     "typescript-eslint": "^8.72.1"
   },
-  "packageManager": "pnpm@12.15.0"
+  "packageManager": "pnpm@12.16.1"
 }

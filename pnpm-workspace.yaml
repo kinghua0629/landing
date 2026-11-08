@@ -1,6 +1,11 @@
 allowBuilds:
   esbuild: true
   sharp: true
+packageExtensions:
+  # astro2tsx omits this runtime dependency; keep it aligned with its emnapi core.
+  '@astrojs/astro2tsx@0.1.2':
+    dependencies:
+      '@emnapi/runtime': 1.11.3
 minimumReleaseAge: 1440
 minimumReleaseAgeExclude:
   - '@tailwindcss/node@4.3.1'
